@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Pritam Saha - Resume</title>
+<style>
+  @page { size: A4; margin: 14mm 15mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Calibri", "Segoe UI", Arial, sans-serif;
+    color: #1a1a1a;
+    font-size: 10.3pt;
+    line-height: 1.38;
+    margin: 0;
+  }
+  h1 {
+    font-size: 21pt;
+    margin: 0 0 2px 0;
+    letter-spacing: 0.5px;
+    color: #0b3d66;
+  }
+  .contact {
+    font-size: 9.3pt;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  .contact a { color: #0b3d66; text-decoration: none; }
+  h2 {
+    font-size: 11pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0b3d66;
+    border-bottom: 1.5px solid #0b3d66;
+    padding-bottom: 2px;
+    margin: 14px 0 7px 0;
+  }
+  p { margin: 3px 0; }
+  ul { margin: 4px 0 6px 0; padding-left: 18px; }
+  li { margin: 2px 0; }
+  .role {
+    font-weight: bold;
+    font-size: 10.6pt;
+    color: #111;
+  }
+  .meta { color: #555; font-style: italic; font-size: 9.4pt; }
+  .proj-title { font-weight: bold; color: #0b3d66; }
+  .stack { color: #666; font-size: 9pt; font-style: italic; }
+  .skills-table { width: 100%; border-collapse: collapse; }
+  .skills-table td { vertical-align: top; padding: 2px 8px 2px 0; }
+  .skills-table .cat { font-weight: bold; color: #0b3d66; width: 150px; }
+  .summary { text-align: justify; }
+  .tag { color: #555; }
+</style>
+</head>
+<body>
+
+  <h1>PRITAM SAHA</h1>
+  <div class="contact">
+    Bengaluru, Karnataka &nbsp;|&nbsp;
+    <a href="mailto:pritamsaha2404@gmail.com">pritamsaha2404@gmail.com</a> &nbsp;|&nbsp;
+    +91 62910 67273
+  </div>
+
+  <h2>Professional Summary</h2>
+  <p class="summary">
+    Quality &amp; Trust-and-Safety professional with 3+ years at Amazon Prime Video in content
+    classification, policy compliance, and AI/ML data evaluation. Hands-on with building
+    practical internal tools using AI assistants and prompt engineering to automate manual
+    review work and reduce quality defects. Currently transitioning toward Data / Risk
+    Analytics, actively building skills in SQL, Python, and BI reporting. Known for turning
+    messy policy and audit data into structured, decision-ready insight.
+  </p>
+
+  <h2>Key Skills</h2>
+  <table class="skills-table">
+    <tr>
+      <td class="cat">Analytics &amp; Data</td>
+      <td>SQL (queries, joins, aggregation) &bull; Excel (pivot, lookups, data cleaning) &bull; Power BI dashboards &bull; data validation &amp; QA</td>
+    </tr>
+    <tr>
+      <td class="cat">AI / GenAI</td>
+      <td>Prompt engineering &bull; LLM-assisted workflow design &bull; AI model-output evaluation &bull; building tools with AI coding assistants</td>
+    </tr>
+    <tr>
+      <td class="cat">Programming</td>
+      <td>Python (foundations, scripting; actively learning) &bull; JavaScript / React &bull; HTML/CSS</td>
+    </tr>
+    <tr>
+      <td class="cat">Domain</td>
+      <td>Trust &amp; Safety &bull; content classification &amp; maturity ratings &bull; policy/SOP compliance &bull; calibration &amp; audit QA &bull; data labeling</td>
+    </tr>
+  </table>
+
+  <h2>Professional Experience</h2>
+
+  <p class="role">Quality Auditor &nbsp;&bull;&nbsp; Amazon Prime Video <span class="meta">(Jan 2024 &ndash; Oct 2026)</span></p>
+  <ul>
+    <li>Audited maturity-rating and content-descriptor classifications for the Australia catalogue, checking auditor decisions against policy SOP and raising correction tickets for mis-predictions.</li>
+    <li>Ran a team-wide calibration analysis that quantified where ratings diverged most, reframing recurring errors as ambiguous rules rather than individual mistakes.</li>
+    <li>Evaluated AI/ML training data and model outputs, flagging labeling inconsistencies that feed back into retraining and SOP improvement.</li>
+    <li>Built internal productivity tools (below) using AI assistants and prompt engineering to speed up manual review steps.</li>
+  </ul>
+
+  <p class="role">Catalogue Specialist &nbsp;&bull;&nbsp; Amazon Prime Video <span class="meta">(May 2022 &ndash; Jan 2024)</span></p>
+  <ul>
+    <li>Tagged and classified Prime Video titles with high accuracy across global catalogues.</li>
+    <li>Flagged content violating safety, copyright, and legal policy for escalation.</li>
+    <li>Performed first-level data labeling that fed downstream AI classification systems.</li>
+  </ul>
+
+  <h2>Projects</h2>
+
+  <p><span class="proj-title">Persona &ndash; Personal Productivity Coach (live app)</span> &nbsp;<span class="stack">(React, PWA, Web Crypto, in-browser AI text-to-speech, Gemini API)</span></p>
+  <ul>
+    <li>Built and shipped a mobile-first app that logs daily tasks, finds energy and time patterns, and plans the next day with explainable rules. Live: <a href="https://pritam2404.github.io/persona/">pritam2404.github.io/persona</a></li>
+    <li>One-tap coach video generated fully in the browser (AI voice + captions) in 8 Indian languages; PIN lock with AES-GCM encryption; privacy-filtered AI chat; 26 automated tests.</li>
+  </ul>
+
+  <p><span class="proj-title">AID &ndash; AU Doubt-Finder</span> &nbsp;<span class="stack">(React, Supabase, LLM prompt design)</span></p>
+  <ul>
+    <li>Designed a web tool that lets auditors raise classification doubts and get SOP-grounded guidance, with a GenAI roadmap for auto-suggesting answers from policy text.</li>
+    <li>Wrote the grounding prompts and guardrails so AI responses stay anchored to the SOP instead of hallucinating.</li>
+  </ul>
+
+  <p><span class="proj-title">Caption Content-Descriptor Auto-Tagger</span> &nbsp;<span class="stack">(Python)</span></p>
+  <ul>
+    <li>Built a Python tool that scans caption/subtitle files and pre-flags content descriptors (language, drugs, violence, sex) against Australia classification rules to speed up manual review.</li>
+  </ul>
+
+  <p><span class="proj-title">Khoj &ndash; Quality Operations Tool</span> &nbsp;<span class="stack">(React dashboard)</span></p>
+  <ul>
+    <li>Prototyped a dashboard to surface quality trends, calibration gaps, and SOP defects in one place for the AU audit team.</li>
+  </ul>
+
+  <p><span class="proj-title">SOP Defect Register &amp; Calibration Analysis</span></p>
+  <ul>
+    <li>Analysed a live calibration workbook to identify the highest-disagreement elements and concrete data-quality defects, producing an evidence base for fixing ambiguous policy rules.</li>
+  </ul>
+
+  <h2>Education</h2>
+  <p><span class="role">B.Tech</span> &nbsp;&bull;&nbsp; Calcutta Institute of Engineering &amp; Management <span class="meta">(2020)</span></p>
+
+  <h2>Certifications &amp; Learning</h2>
+  <ul>
+    <li>SQL for Data Science &bull; Excel for Data Analysis</li>
+    <li>Self-directed: Python foundations, prompt engineering, Power BI (in progress)</li>
+  </ul>
+
+  <h2>Languages</h2>
+  <p>English &bull; Hindi &bull; Bengali</p>
+
+</body>
+</html>
